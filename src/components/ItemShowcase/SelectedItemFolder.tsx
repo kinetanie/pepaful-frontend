@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Button, makeStyles, Paper, Typography } from "@material-ui/core";
+import { Link as RouterLink } from "react-router-dom";
 import SelectedItem from "./SelectedItem";
 
 const selectedItemFolderStyles = makeStyles({
@@ -60,6 +61,8 @@ function SelectedItemFolder() {
           className={classes.formButton}
           variant="contained"
           color="primary"
+          component={RouterLink}
+          to="/form"
         >
           入力フォームへ
         </Button>
