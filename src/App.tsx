@@ -1,13 +1,12 @@
 import React from "react";
-// import { Button } from "@material-ui/core";
 import AppHeader from "./components/AppHeader";
-import Home from "./pages/Home";
+import Form from "./pages/Form";
 
 function App() {
   return (
     <>
       <AppHeader />
-      <Home/>
+      <Form/>
     </>
   );
 }
