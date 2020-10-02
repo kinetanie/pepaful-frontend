@@ -1,7 +1,8 @@
 import React from "react";
-import { Container, Grid, Paper, Typography } from "@material-ui/core";
+import { Container, Grid } from "@material-ui/core";
 import EyeCatch from "../components/EyeCatch";
-import ItemFolder from "../components/ItemFolder";
+import DefaultItemFolder from "../components/ItemShowcase/DefaultItemFolder";
+import SelectedItemFolder from "../components/ItemShowcase/SelectedItemFolder";
 
 function Home() {
   return (
@@ -9,12 +10,10 @@ function Home() {
       <Grid container spacing={2}>
         <Grid item xs={9}>
           <EyeCatch />
-          <Paper>
-            <Typography>foo</Typography>
-          </Paper>
+          <DefaultItemFolder />
         </Grid>
         <Grid item xs={3}>
-          <ItemFolder/>
+          <SelectedItemFolder />
         </Grid>
       </Grid>
     </Container>

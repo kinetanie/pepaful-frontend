@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Button, makeStyles, Paper, Typography } from "@material-ui/core";
 import SelectedItem from "./SelectedItem";
 
-const itemFolderStyles = makeStyles({
+const selectedItemFolderStyles = makeStyles({
   root: {
     marginTop: 30,
   },
@@ -27,8 +27,8 @@ const itemFolderStyles = makeStyles({
   },
 });
 
-function ItemFolder() {
-  const classes = itemFolderStyles();
+function SelectedItemFolder() {
+  const classes = selectedItemFolderStyles();
   const itemProps = [
     {
       title: "サンプルアイテム",
@@ -68,4 +68,4 @@ function ItemFolder() {
   );
 }
 
-export default ItemFolder;
+export default SelectedItemFolder;
